@@ -1,0 +1,21 @@
+{
+  "name": "@manzano/http-client-401-interceptor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "config": {
+    "distFolder": "dist"
+  },
+  "scripts": {
+    "build": "rm -rf $npm_package_config_distFolder && tsc && cp package.json $npm_package_config_distFolder",
+    "deploy": "npm publish $npm_package_config_distFolder --access public",
+    "prettify": "prettier src --write"
+  },
+  "peerDependencies": {
+    "@manzano/http-client": ">=1.0.4"
+  },
+  "devDependencies": {
+    "@manzano/http-client": "1.0.4",
+    "prettier": "2.0.5",
+    "typescript": "3.9.7"
+  }
+}
